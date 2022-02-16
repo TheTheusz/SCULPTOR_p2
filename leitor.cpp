@@ -22,7 +22,7 @@ vector<FiguraGeometrica*> leitor::interpretador(string filename) {
     stringstream ss;
 
     ifstream inFile;
-    inFile.open(filename.c_str()); // c_str retorna o ponteiro do arquivo
+    inFile.open(filename);
 
     if (!inFile.is_open()) { // verifica se o arquivo abriu direitinho
         cout << "Não foi possivel abrir " << filename << ".\n" << endl;
